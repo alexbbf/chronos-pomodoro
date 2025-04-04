@@ -1,7 +1,19 @@
 import './styles/theme.css';
 import './styles/global.css';
-export function App() {
-  console.log('oi');
 
-  return <h1>Olá Mundo do APP</h1>;
+import { Heading } from './components/Heading';
+import { Container } from './components/Container';
+
+export function App() {
+  return (
+    <>
+      <Container>
+        <Heading>LOGO</Heading>
+      </Container>
+
+      <Container>
+        <Heading>MENU</Heading>
+      </Container>
+    </>
+  );
 }
